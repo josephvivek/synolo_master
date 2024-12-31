@@ -1,0 +1,29 @@
+.sub-navbar{
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.sub-navbar li{
+    margin: 0.5rem 1rem;
+}
+
+.sub-navbar li:hover{
+    cursor: pointer;
+}
+
+.sub-navbar li::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: scale(0);
+    transition: transform 0.1s ease;
+}
+
+.sub-navbar li:hover::after{
+    transform: scale(1);
+}

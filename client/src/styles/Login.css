@@ -1,0 +1,81 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login-form{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7rem;
+
+}
+
+label{
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 1px;
+}
+
+input{
+    width: 23rem;
+    height: 3rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* input::placeholder{
+    
+} */
+
+
+.input-group{
+    padding: 1rem;
+}
+
+.heading{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.login-button{
+    height: 3rem;
+    width: 23rem;
+    font-size: 1.3rem;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(78, 146, 206);
+}
+.create-account{
+    margin-top: 2rem;
+    color: rgb(78, 146, 206);
+}
+.share-tech-regular {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo{
+    text-align: center;
+    color: rgb(78, 146, 206);
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+  

@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: rgb(199, 221, 232);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin: 2px 1rem;
+}
+
+
+.nav-middle{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+}
+.nav-list li{
+    margin: 0.5rem 1rem;
+}
+
+.nav-list li:hover{
+    cursor: pointer;
+}
+
+.nav-list li::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: scale(0);
+    transition: transform 0.1s ease;
+}
+
+.nav-list li:hover::after{
+    transform: scale(1);
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right img{
+    width: 60px;
+    margin: 1rem;
+}
+
+.tooltip{
+    position: absolute;
+    right: 5.2%;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    z-index: 100;
+    border-radius: 3px; 
+    font-size: 10px; 
+}
+
+
+
+.tooltip-arrow{
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-35px) rotateZ(45deg);
+    width: 8px;
+    height: 8px;
+    background-color: black;
+}
+
+.tooltip, .tooltip-arrow{
+    opacity: 0;
+    transition: opacity 20ms ;
+}
+
+.nav-right img:hover{
+    cursor: pointer;
+}
+
+.nav-right img:hover + .tooltip,
+.nav-right img:hover + .tooltip + .tooltip-arrow {
+
+    opacity: 1;
+}
+
+
+
