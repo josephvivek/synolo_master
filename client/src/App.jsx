@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home"
 import User from "./pages/User";
+import Design from "./pages/Design"
 
 
 function App(){
@@ -15,6 +16,7 @@ function App(){
                 <Route path='/create' element={<CreateAccount/>}/>
                 <Route path='/home' element={<Home/>}/>
                 <Route path="/user" element={<User/>}/>
+                <Route path="/design" element={<Design/>}></Route>
                 
             </Routes>
         </BrowserRouter>
