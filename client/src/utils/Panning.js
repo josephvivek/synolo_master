@@ -16,7 +16,7 @@ export const usePanning = (wrapperRef) => {
     setScrollLeft(wrapperRef.current.scrollLeft);
     setScrollTop(wrapperRef.current.scrollTop);
     wrapperRef.current.style.cursor = "grabbing";
-  };
+  };  
 
   // Function to handle mouse up event
   const PanningMouseUp = () => {
