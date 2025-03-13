@@ -6,6 +6,7 @@ import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home"
 import User from "./pages/User";
 import Design from "./pages/Design"
+import process from "process";
 
 
 function App(){
